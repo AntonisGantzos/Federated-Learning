@@ -2,12 +2,12 @@
 This repository implements a Federated Learning (FL) pipeline using Flower (FLWR), PyTorch, and Hydra for configuration management. The system allows for distributed training of machine learning models across multiple clients, using MNIST as the example dataset, with decentralized data storage and local training. This project is based on the tuorial made by FLOWER to simulate a federated learning pipeline (https://github.com/adap/flower/tree/main/examples/flower-simulation-step-by-step-pytorch)
 
 # Features
-  Federated Learning: Uses Flower for managing federated learning simulations and model aggregation.
-  Custom Models: Users can define and train their own model architectures.
-  Client Simulation: Simulates multiple clients, each with its own subset of the dataset for local training.
-  Dataset Handling: Efficient loading and partitioning of the MNIST dataset into training and validation sets.
-  Configurable Parameters: Hyperparameters (learning rate, momentum, local epochs, etc.) can be customized via Hydra configurations.
-  GPU Support: The code automatically detects and uses available GPUs for training if present.
+  - Federated Learning: Uses Flower for managing federated learning simulations and model aggregation.
+  - Custom Models: Users can define and train their own model architectures.
+  - Client Simulation: Simulates multiple clients, each with its own subset of the dataset for local training.
+  - Dataset Handling: Efficient loading and partitioning of the MNIST dataset into training and validation sets.
+  - Configurable Parameters: Hyperparameters (learning rate, momentum, local epochs, etc.) can be customized via Hydra configurations.
+  - GPU Support: The code automatically detects and uses available GPUs for training if present.
 
 # File Structure
 - fit_strategy.py: Contains functions for generating the configuration for training (fit) and evaluation during federated learning rounds.
