@@ -1,0 +1,7 @@
+How does federated learning work? 
+A generic baseline model is stored at the central server. 
+The copies of this model are shared with the client devices, which then train the models based on the local data they generate.
+Over time, the models on individual devices become personalized and provide a better user experience. 
+In the next stage, the updates (model parameters) from the locally trained models are shared with the main model located at the central server using secure aggregation techniques. 
+This model combines and averages different inputs to generate new learnings. Since the data is collected from diverse sources, there is greater scope for the model to become generalizable. 
+Once the central model has been re-trained on new parameters, it’s shared with the client devices again for the next iteration. With every cycle, the models gather a varied amount of information and improve further without creating privacy breaches. 
