@@ -25,13 +25,12 @@ This repository implements a Federated Learning (FL) pipeline using Flower (FLWR
   Federated Learning Process:
   - The server orchestrates the federated learning rounds, where clients receive a global model, perform local training on their dataset partitions, and send back the updated model parameters. The server aggregates these updates to refine the global model.
   
-  Client Training:
-    - Each client uses its own subset of the dataset for local training.
+  - Each client uses its own subset of the dataset for local training.
     
-  The FlowerClient class is responsible for handling:
-    - Setting parameters received from the server.
-    - Training the model locally using the MNIST data partition.
-    - Sending the updated model parameters back to the server after local training.
+  - The FlowerClient class is responsible for handling:
+      - Setting parameters received from the server.
+      - Training the model locally using the MNIST data partition.
+      - Sending the updated model parameters back to the server after local training.
     
-  Model Aggregation:
-    - After each round, the server aggregates model updates from clients to create an improved global model.
+  - Model Aggregation:
+      - After each round, the server aggregates model updates from clients to create an improved global model.
